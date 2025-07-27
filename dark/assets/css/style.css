@@ -16278,8 +16278,8 @@ video.video-area {
 }
 @media only screen and (max-width: 1199px) {
   .work-area-work-page .section-content-wrapper {
-    margin-bottom: 43px;
     max-width: 750px;
+    margin-bottom: 43px;
   }
 }
 @media only screen and (max-width: 991px) {
