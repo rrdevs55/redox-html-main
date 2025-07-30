@@ -999,7 +999,7 @@
             font-size: 100px;
             line-height: 1.05;
             color: var(--white);
-            transform: translateY(-130px);
+            // transform: translateY(-130px);
 
             a {
                 &:hover {
@@ -1047,9 +1047,8 @@
             &__content {
 
                 &-title {
-                    opacity: 1;
-                    transform: translatey(0px);
                     transition: all 2200ms ease;
+                    animation: slideFadeIn 2.2s ease forwards;
                 }
             }
 

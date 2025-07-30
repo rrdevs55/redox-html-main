@@ -436,6 +436,16 @@ h6 {
     transform: translateX(-100%);
   }
 }
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-130px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*----------------------------------------*/
 /* global css */
 /*----------------------------------------*/
@@ -11045,7 +11055,6 @@ video.video-area {
   font-size: 100px;
   line-height: 1.05;
   color: var(--white);
-  transform: translateY(-130px);
 }
 .portfolio-5__content-title a:hover {
   color: var(--white);
@@ -11077,9 +11086,8 @@ video.video-area {
   animation-fill-mode: forwards;
 }
 .portfolio-5 .swiper-slide-active .portfolio-5__content-title {
-  opacity: 1;
-  transform: translatey(0px);
   transition: all 2200ms ease;
+  animation: slideFadeIn 2.2s ease forwards;
 }
 .portfolio-5 .swiper-slide-active .portfolio-5__list {
   opacity: 1;
